@@ -11,43 +11,43 @@
 
 <body>
     <header>
-        <section>
-                <div class="logo"></div>
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="join_page.html">Join Us</a>
-                        <a href="gallery.html">Gallery</a>
-                    </nav>
-        </section>
+            <nav class="navbar">
+                <a href="index.html">
+                    <img src="Gamelogo.png" alt="Game On Logo" class ="logo">
+                </a>
+                <button class="menu-toggle">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join_page.html">Join Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
     </header>
 
     <div class="why-choose-us">
         <h2>Our Previous Projects</h2>
     </div>
         <main>
-            <div class="gallery-grid-container">
-                <div class="box1 game1"></div> 
-                <div class="box1 text">
-                    <h2>Duck City 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur commodo.</p>
-                </div> 
-                <div class="box1 game2"></div> 
-                <div class="box1 text">
-                    <h2>Robot Battle</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur commodo.</p>
-                </div> 
-                <div class="box1 game3"></div> 
-                <div class="box1 text">
-                    <h2>Flight Simulator</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur commodo.</p>
-                </div>
-                <div class="box1 game4"></div>
-                <div class="box1 text">
-                    <h2>Block City</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur commodo.</p>
-                </div>
-            </div>
+            <section class="search-section">
+                <p>
+                    Search:
+                </p>
+                <search class="search-box">
+                    <input type="text" id="search">
+                </search>
+            </section>
+            <div class="gallery-grid-container" id="gallery"></div>
+
+            <a href = "#"><img src="Up Icon.png" class = "scrolltotop"></a> 
+
         </main>   
-    </div>
+
+        <footer>
+            <p>© 2026 Game On Interactive. All Rights Reserved.</p>
+            <p>Social Media: @GameOnInteractive</p>
+            <p>In Collaboration With: ArtHouseStudios</p>
+        </footer>
+
+    <script src="java.js" defer></script>
 </body>
 </html>

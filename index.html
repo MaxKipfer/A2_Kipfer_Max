@@ -11,14 +11,17 @@
 
 <body>
     <header>
-        <section>
-                <div class="logo"></div>
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="join_page.html">Join Us</a>
-                        <a href="gallery.html">Gallery</a>
-                    </nav>
-        </section>
+            <nav class="navbar">
+                <a href="index.html">
+                    <img src="Gamelogo.png" alt="Game On Logo" class ="logo">
+                </a>
+                <button class="menu-toggle">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join_page.html">Join Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
     </header>
 
     <div class="banner-image-home">
@@ -27,16 +30,40 @@
             <h2>Interactive</h2>
         </div>
     </div>
-    <div class="why-choose-us">
+    <section class="why-choose-us">
         <h2>Our Mission</h2>
-    </div>
+    </section>
     <main>
         <div class="grid-container-home">
-            <div class="box">
+            <section class="box">
                 <h2 class="mission-text">We strive to deliver quality games while maintaing the highest standards of employment.</h2>
-            </div>
+            </section>
         </div>
+
+    <section class="Pokemon-Section">
+
+    <div class="box join">We are also huge Pokemon fans! <br> Here's our Pokemon of the day:</div>
+
+    <div class="container">
+      <div id="pokemon-card" class="pokemon-card" style="display: none;">
+        <img id="pokemon-img" src="" alt="Pokemon">
+        <h4 id="pokemon-name"></h4>
+        <p id="pokemon-type"></p>
+      </div>
+      <p id="fetch-output" class="output"></p>
+    </div>
+    </section>
+
+    <a href = "#"><img src="Up Icon.png" class = "scrolltotop"></a>
+
     </main>
 
+    <footer>
+        <p>© 2026 Game On Interactive. All Rights Reserved.</p>
+        <p>Social Media: @GameOnInteractive</p>
+        <p>In Collaboration With: ArtHouseStudios</p>
+    </footer>
+
+    <script src="java.js" defer></script>
 </body>
 </html>

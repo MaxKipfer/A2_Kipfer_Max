@@ -11,14 +11,17 @@
 
 <body>
     <header>
-        <section>
-                <div class="logo"></div>
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="join_page.html">Join Us</a>
-                        <a href="gallery.html">Gallery</a>
-                    </nav>
-        </section>
+            <nav class="navbar">
+                <a href="index.html">
+                    <img src="Gamelogo.png" alt="Game On Logo" class ="logo">
+                </a>
+                <button class="menu-toggle">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join_page.html">Join Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
     </header>
 
     <div class="banner-image">
@@ -28,7 +31,7 @@
         <h1>Send us an application here</h1>
         <button class="application-button">Apply</button>
     </div>
-    <div class="why-choose-us">
+    <section class="why-choose-us">
         <h2>Why choose us?</h2>
     </div>
     <main>
@@ -49,28 +52,48 @@
             </div> 
             <div class="box tall">
                 <h2>Mailing List Sign Up</h2>
-                <fieldset class="sign-up">
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="Enter your email">
-                    <label for="position">Position:</label>
-                    <input type="text" placeholder="What position are you interested in?">
+                <form id="myForm" class="sign-up">
+                    <label>Name:</label>
+                    <input type="text" id="name">
+                    <span class="error" data-error-for="name">Name is required</span>
+
+                    <label>Email:</label>
+                    <input type="email" id="email">
+                    <span class="error" data-error-for="email">Email is invalid</span>
+
+                    <label>Position:</label>
+                    <input type="text" id="position">
+                    <span class="error" data-error-for="position">Input must be text</span>
+
+                    <label>Experience:</label>
+                    <input type="text" id="experience">
+                    <span class="error" data-error-for="experience">Input must be text</span>
+
                     <div class="divider">
                         <label for="subscribe">I would like to receive email updates</label>
                         <input type="checkbox" id="subscribe" name="subscribe">
                     </div>
-                    
-                    <button class="application-button">Submit</button>
-                </fieldset>
-                    
+
+                    <button class = "application-button" type="submit">Submit</button>
+                </form>
                 
             </div>
-            <div class="box heart"></div>
-            <div class="box image8">
-                <h2>Great Benefits</h2>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>   
-        </div>
+                <div class="box heart"></div>
+                    <div class="box image8">
+                        <h2>Great Benefits</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>   
+            </div>
+
+            <a href = "#"><img src="Up Icon.png" class = "scrolltotop"></a>
     </main>
 
+    <footer>
+        <p>© 2026 Game On Interactive. All Rights Reserved.</p>
+        <p>Social Media: @GameOnInteractive</p>
+        <p>In Collaboration With: ArtHouseStudios</p>
+    </footer>
+
+    <script src="index.js" defer></script>
 </body>
 </html>
